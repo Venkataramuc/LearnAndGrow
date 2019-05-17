@@ -1,20 +1,20 @@
-#Performance, Scalability, And High Availability: 3 Key Infrastructure Adaptability Requirements
+# Performance, Scalability, And High Availability: 3 Key Infrastructure Adaptability Requirements
 
 Performance, scalability, and HA are often used interchangeably, and any confusion about them can result in unrealistic metrics and deployment delays. It is important to invest your time and understand the differences among these three approaches before you invest your money in resilient systems.
 
-#Performance
+# Performance
 
 Performance means system throughput under a given workload for a specific timeframe. Performance is validated by testing the scalability and the reliability of hardware, software and network. It is an ongoing process and not an end result. Performance requirements undergo massive changes as features and functionalities get added and eliminated to accommodate evolving business requirements.
 
-#Scalability
+# Scalability
 
 Scalability simply refers to the ability of an application or a system to handle a huge volume of workload or expand in response to an increased demand for database access, processing, networking, or system resources.
 
-#High Availability
+# High Availability
 
 High availability is when your apps remain available and accessible without any interruption and serve their intended function seamlessly. HA is achieved when your database cluster continues to operate, for example, even if one or more servers are blown up, shut down, or simply disengaged unexpectedly from the rest of the network.   
 
-#Factors Affecting HA
+# Factors Affecting HA
 
 Ensuring that apps hosted in the middle tier remain up and running requires database failover mechanism that directs queries to another server with a copy of the same data.  To deliver availability during a database failover you must ensure that:
 
@@ -30,7 +30,7 @@ Shifting the focus from Over Optimization to Scalability
 
 The most common mistake people make is over optimization– buying more infrastructure than they need. This approach is not only expensive, complicated and time-consuming, but it also needs top-notch engineering talent and expert consulting. In addition to increasing overall costs, it also wastes capital on non-revenue generating investments. Instead, shift your focus to scalability and shop for performance because if you invest in a high-end rack of servers it might cost you roughly $30,000 but if your DBAs and app developers have been working on your scalability plan for the past two months, the cost would be nothing less than $100,000. Be sure to calculate the cost of servers over their lifetime. So buy what you need today and wait to buy more until you must.
 
-#Deploying Scalable Systems
+# Deploying Scalable Systems
 
 Service level agreements determine the need for horizontal or vertical scaling. A stock trading system needs to scale instantly whereas an eCommerce app needs to scale only during big sale seasons when the traffic spikes. Database load balancing can help maximize throughput and minimize response times by distributing queries across multiple database servers.
 
