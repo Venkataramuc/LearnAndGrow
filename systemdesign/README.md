@@ -42,6 +42,6 @@ Deploying database load balancing software is the best way to architect infrastr
 Database load balancing software sits transparently between the applications and your database servers to ensure instant routing of traffic without needing application modifications. With database load balancing software, it is possible to scale out transparently and scale up instantly. It assures data recovery following a disaster, business continuity even with a high volume of traffic, reduced troubleshooting time with real-time root cause identification, and automatic failover without experiencing disruption or downtime. With advanced database load balancing features it empowers a server cluster to achieve high scalability, high performance and high availability at the same time. So, if you are not load balancing your database traffic, you end up spending a lot of time building efficiencies your enterprise will never put to use. Why put a Porsche engine on your skateboard if all you require is a skateboard?
 
 
-# RIGHT Difference between stream processing and message processing
-===================================================================
+# -> Difference between stream processing and message processing
+===================================================================================
 What is the basic difference between stream processing and traditional message processing? As people say that kafka is good choice for stream processing but essentially kafka is a messaging framework similar to ActivMQ, RabbitMQ etc
