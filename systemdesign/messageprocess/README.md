@@ -1,19 +1,19 @@
 # Thoughts Shared on Kafka
-==========================
+========================================
 A developer goes over his favorite resources on Apache Kafka, giving a breif synopsis of each.
 
 This is a collection of interesting articles, best practices, case studies, and some books (on data and logs) I came across while working with Kafka.
 
 # Articles
+
 Kafka in a Nutshell. Published on September 25, 2015, by Kevin Sookocheff. Kevin’s article is all about Kafka in a nutshell. He says “Kafka is quickly becoming the backbone of many organization’s data pipelines — and with good reason. By using Kafka as a message bus we achieve a high level of parallelism and decoupling between data producers and data consumers, making our architecture more flexible and adaptable to change.” If you have not read about Kafka yet, you must go through it. This is more like an executive summary of the what, where, and why of Kafka.
 Should you put several event types in the same Kafka topic? Published by Martin Kleppmann on January 18, 2018. Martin Kleppmann has focused on why the number of partitions matters. He says, "as a rule of thumb, if you care about latency, you should probably aim for (order of magnitude) hundreds of topic-partitions per broker node. If you have thousands or even tens of thousands of partitions per node, your latency will suffer. Most of the time we get confused about whether it’s a good practice to have multiple events on the same topic or we should have one is to one. When you use different topics for similar events you might end up with ordering issues." Kleppmann has discussed all the points about latency, performance, ordering and best practices in this article.
 How to choose the number of topics/partitions in a Kafka cluster? Published by Jun Rao, who said “the degree of parallelism in the consumer (within a consumer group) is bounded by the number of partitions being consumed. Therefore, in general, the more partitions there are in a Kafka cluster, the higher the throughput one can achieve.” A partition is directly mapped to the file system in the broker. This article is having views on how the file system behaves with the increase in the partition. Also, the discussion is on the latency getting affected by the number of partitions.
 Why I am not a fan of Apache Kafka. Published by Mark Rendle. Mark has some points like “If you are using Java/Scala/Clojure/Kotlin/whatever and can use the Official Java Client then I’m sure Kafka is a perfectly reasonable choice for a message bus, although there are plenty of others that seem to me to be far less bloody-minded.” Kafka cannot solve all the problems you have. This blog post is more about why Kafka is not a good choice for some scenarios and what the alternatives are.
 Best practices by Tony Mancill, August 1, 2018. Tony says, "Kafka has gained popularity with application developers and data management experts because it greatly simplifies working with data streams. But Kafka can get complex at scale." This is one of the great articles on best practices if you are really worried about the industry standard and the adaptability of Kafka. The article has a different section of best practices like partitions, consumers, producers, and brokers.
-Case Studies
+# Case Studies
 I went through different case studies where companies have used Kafka at a large scale and have written about their experience with this streaming technology.
 
 New York Times: Boerge Svingen has authored this post in the Confluent blog and has focused on the backend systems and described the new approach they developed to solve a problem, based on a log-based architecture powered by Apache Kafka. They call it thePublishing Pipeline. This is all about how Kafka is used for storing all the articles ever published by The New York Times.
 Keystone Pipeline at Netflix, by the Netflix Technology Blog. This case study is about Netflix’s data pipeline called the Keystone pipeline, which is a unified event for publishing, collecting, and routing infrastructure for both batch and stream processing.
 Linkedin’s Scale: How Big is Big? This has been answered by the creator of Kafka, you will get a view on the experience of running Kafka at a scale. Kafka provides reliability, resiliency, and retention, all while performing at high throughput
-
