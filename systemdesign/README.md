@@ -1,4 +1,5 @@
 # Performance, Scalability, And High Availability: 3 Key Infrastructure Adaptability Requirements
+=============
 
 Performance, scalability, and HA are often used interchangeably, and any confusion about them can result in unrealistic metrics and deployment delays. It is important to invest your time and understand the differences among these three approaches before you invest your money in resilient systems.
 
